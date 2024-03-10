@@ -131,8 +131,6 @@ article {
     padding: 10px;
     box-shadow: 1px 1px 10px rgba(0, 0, 0, 0.164);
     transition: 0.4s all ease;
-    max-width: 50%;
-    height: 30%px;
     font-size: 15px;
     display: flex;
     flex-direction: column;

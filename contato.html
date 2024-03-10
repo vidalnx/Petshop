@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=, initial-scale=1.0">
+    <title>Contato - PetAmigo</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+</head>
+<body>
+    <header>
+        <a href="index.html">
+            <img src="img/logohead.png" alt="logo">            
+        </a>
+        <div class="input">
+            <div class="buscar">
+                <input class="bus" type="search" placeholder="Buscar"><a href="#"><button class="bt"><i class="fa-solid fa-magnifying-glass"></i></button></a>
+            </div>
+        </div>
+        <nav>
+            <img src="img/telefone.png" alt="contato">
+            <img src="img/coracao.png" alt="favoritos">
+            <img src="img/sacola.png" alt="sacola de compras">
+            <img src="img/perfil.png" alt="perfil">               
+            <ul>
+                <li><a href="#">Entre ou<br>Cadastre-se</a></li>
+            </ul>
+        </nav>
+    </header>
+    <div class="categorias">
+        <a href="racao-cachorro.html" style="text-decoration: none; color: white;">Cachorros</a>
+        <a href="racao-gato.html" style="text-decoration: none; color: white;">Gato</a>
+        <a href="racao-passaro.html" style="text-decoration: none; color: white;">Passaros</a>
+        <a href="servicos.html" style="text-decoration: none; color: white;">Serviços</a>
+    </div>
+    <section class="contact">
+        <div class="box">
+            <form action="">
+                <fieldset>
+                    <legend><b>Abrir Ticket</b></legend>
+                    <br>
+                    <div class="inputBox">
+                        <input type="text" name="nome" id="nome" class="inputUser" required>
+                        <label for="nome" class="labelInput">Nome completo</label>
+                    </div>
+                    <br><br>
+                    <div class="inputBox">
+                        <input type="text" name="email" id="email" class="inputUser" required>
+                        <label for="email" class="labelInput">Email</label>
+                    </div>
+                    <br><br>
+                    <div class="inputBox">
+                        <input type="tel" name="telefone" id="telefone" class="inputUser" required>
+                        <label for="telefone" class="labelInput">Telefone</label>
+                    </div>
+                    <p style="margin-top: 15px;">Sexo:</p>
+                    <input type="radio" id="feminino" name="genero" value="feminino" required>
+                    <label for="feminino">Feminino</label>
+                    <br>
+                    <input type="radio" id="masculino" name="genero" value="masculino" required>
+                    <label for="masculino">Masculino</label>
+                    <br>
+                    <input type="radio" id="outro" name="genero" value="outro" required>
+                    <label for="outro">Outro</label>
+                    <br><br>
+                    <input type="submit" name="submit" id="submit">
+                </fieldset>
+            </form>
+        </div>
+    </section>
+    <div class="site-info">
+        <div class="links">
+            <ul>
+                <li><a href="sobre.html">Sobre</a></li>
+                <li><a href="termos.html">Termos de Uso</a></li>
+                <li><a href="politica.html">Política de Privacidade</a></li>
+                <li><a href="faq.html">FAQ</a></li>
+            </ul>
+        </div>
+        <div class="social-links">
+            <ul>
+                <li><a href="#" class="facebook"><i class="fab fa-facebook"></i></a></li>
+                <li><a href="#" class="twitter"><i class="fab fa-twitter"></i></a></li>
+                <li><a href="#" class="instagram"><i class="fab fa-instagram"></i></a></li>
+            </ul>
+        </div>
+    </div>
+    <footer>
+        <p><i>&copy; 2024 Pet Amigo. Todos os direitos reservados.</i></p>
+    </footer>
+</body>
+</html>

@@ -125,22 +125,64 @@ nav a {
     padding: 30px;
 }
 
+.content-serv {
+    grid-gap: 40px;
+    display: grid;
+    align-items: end;
+    grid-template-columns: repeat(2, 200px);
+    grid-template-columns: repeat(auto-fit, 100px);
+    grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
+    justify-content: center;
+    justify-items: center;
+    justify-content: center;
+    background-color: white;
+    padding: 30px;
+}
+
 article {
     background-color: rgb(255, 255, 255);
-    border-radius: 10px;
+    border-radius: 30px;
     padding: 10px;
     box-shadow: 1px 1px 10px rgba(0, 0, 0, 0.164);
     transition: 0.4s all ease;
     font-size: 15px;
+    width: 100%<body>
+    <header>
+        <a href="index.html">
+          <img src="img/logohead.png" alt="logo">            
+        </a>
+        <div class="input">
+                <input class="bus" type="search" placeholder="Buscar"><a href="#"><button class="bt"><i class="fa-solid fa-magnifying-glass"></i></button></a>
+            </div>
+        </div>
+        <nav>
+            <a href="contato.html">
+                <img src="img/telefone.png" alt="contato">
+            </a>
+            <a href="favoritos.html">
+                <img src="img/coracao.png" alt="favoritos">  
+            </a>
+            <a href="sacola.html">
+                <img src="img/sacola.png" alt="sacola de compras">
+            </a>
+            <a href="perfil.hmtl">
+                <img src="img/perfil.png" alt="perfil">  
+            </a>
+            <ul>
+                <li><a href="#">Entre ou<br>Cadastre-se</a></li>
+            </ul>
+        </nav>
+    </header>;
     display: flex;
     flex-direction: column;
-    align-items: center;
+    justify-content: space-between;
 }
 
 .botoesc {
     display: flex;
     flex-direction: column;
     align-items: center;
+    text-align: center;
 }
 
 article button {
@@ -204,11 +246,7 @@ article:hover {
     text-align: center;
 }
 
-.site-info .links {
-    color: white;
-    text-decoration: none;
-    
-}
+
 
 .site-info .links ul,
 .site-info .social-links ul {
@@ -338,7 +376,7 @@ legend{
     }
 }
 
-@media only screen and (max-width: 770px) {
+@media only screen and (max-width: 500px) {
     article {
         max-width: 100%;
         height: 30%px;
@@ -373,7 +411,7 @@ legend{
     }
     
     .bt {
-        margin-left: 100px;
+        margin-left: 180px;
         width: 28px;
         height: 28px;
         border-radius: 10px;

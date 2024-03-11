@@ -146,33 +146,7 @@ article {
     box-shadow: 1px 1px 10px rgba(0, 0, 0, 0.164);
     transition: 0.4s all ease;
     font-size: 15px;
-    width: 100%<body>
-    <header>
-        <a href="index.html">
-          <img src="img/logohead.png" alt="logo">            
-        </a>
-        <div class="input">
-                <input class="bus" type="search" placeholder="Buscar"><a href="#"><button class="bt"><i class="fa-solid fa-magnifying-glass"></i></button></a>
-            </div>
-        </div>
-        <nav>
-            <a href="contato.html">
-                <img src="img/telefone.png" alt="contato">
-            </a>
-            <a href="favoritos.html">
-                <img src="img/coracao.png" alt="favoritos">  
-            </a>
-            <a href="sacola.html">
-                <img src="img/sacola.png" alt="sacola de compras">
-            </a>
-            <a href="perfil.hmtl">
-                <img src="img/perfil.png" alt="perfil">  
-            </a>
-            <ul>
-                <li><a href="#">Entre ou<br>Cadastre-se</a></li>
-            </ul>
-        </nav>
-    </header>;
+    width: 100%;
     display: flex;
     flex-direction: column;
     justify-content: space-between;

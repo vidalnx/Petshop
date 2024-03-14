@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="br">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=, initial-scale=1.0">
@@ -44,17 +44,42 @@
     <section class="carrinhos">
         <div class="carrinho-a">
             <h1>Meu carrinho</h1>
-            <div class="cart-content">
-                <img src="img/gato1.jpg" alt="" width="40%">
-                <p>Ração para gato</p>
-                <span>R$ 58,90</span>
+            <div class="cart">
+                <div class="cart-content">
+                    <div class="cartprod">
+                        <img src="img/gato1.jpg" alt="" width="40%">
+                        <p>Ração para gato</p>
+                    </div>
+                    <div class="cartb">
+                        <select name="quantidade" id="">
+                            <option value="1">1</option>
+                            <option value="2">2</option>
+                            <option value="3">3</option>
+                        </select>
+                    </div>
+                    <span>R$ 58,90</span>
+                    <div class="cartprod">
+                        <img src="img/racao1.jpg" alt="" width="40%">
+                        <p>Ração para cachorro</p>
+                    </div>
+                    <div class="cartb">
+                        <select name="quantidade" id="">
+                            <option value="1">1</option>
+                            <option value="2">2</option>
+                            <option value="3">3</option>
+                        </select>
+                
+                    </div> 
+                    <span>R$ 58,90</span>
+                </div>                
             </div>
         </div>
+    </div>
         <div class="carrinho-b">
             <div class="cep">
-                <h4>Calcule seu CEP:</h4>
-                <input type="text">
-                <input type="submit">
+                <h5>Calcule seu CEP:</h5>
+                <input type="text" id="cep">
+                <input type="submit" id="buttonb">
             </div>
             <div class="cart-resume">
                 <p>Resumo do pedido</p>
@@ -63,13 +88,15 @@
                     <p>Frete: R$ 39,20</p>
                     <h4>Valor total: R$ 89,10</h4>
                 </div>
-                <button>Comprar</button>
+                <button id="buttona">Comprar</button>
                 <a href="index.html">
-                    <button>Escolher mais produtos</button>
+                    <button id="buttonb">Escolher mais produtos</button>
                 </a>
             </div>
-            <h5>Cupom</h5>
-            <input type="text"> <button>Aplicar</button>
+            <div class="cupom">
+                <h5>Cupom</h5>
+                <input type="text" id="cep"> <button id="buttonb">Aplicar</button>
+            </div>
         </div>
     </section>
     <div class="site-info">

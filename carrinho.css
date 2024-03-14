@@ -102,3 +102,25 @@
 #buttonb:hover {
     background-color: rgb(217, 233, 250) ;
 }
+
+@media only screen and (max-width: 500px) {
+    * {
+        font-size: 15px;
+    }
+    
+    .carrinhos {
+        margin: 0px;
+        display: flex;
+        flex-direction: column;
+        margin-top: 20px;
+        padding: 10px;
+    }
+
+    .carrinho-a {
+        width: 100%;
+    }
+
+    .carrinho-b {
+        width: 100%;
+    }
+}

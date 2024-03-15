@@ -2,14 +2,15 @@
     display: flex;
     flex-direction: row;
     margin: 50px;
+    font-size: 15px;
+    color: rgb(85, 84, 84);
 }
 
-.cep, .cart-resume, .cart-content, .cupom{
+.cep, .cart-resume, .cart-content, .cupom, .contentc{
     background-color: white;
     border-radius: 20px;
     margin: 10px;
-    padding: 15px;
-    font-size: 20px;
+    padding: 13px;
 }
 
 .carrinho-a {
@@ -27,23 +28,29 @@
     background-color: rgb(224, 226, 224);
 }
 
+.item {
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.26);
+    width: 100%;
+}
+
 .cartprod {
     display: flex;
     align-items: center;
-    justify-content: start;
-    max-width: 50%;
+    width: 100%;
 }
 
 .cart-content {
     display: flex;
     align-items: center;
-    justify-content: space-around;
     flex-wrap: wrap;
+    justify-content: space-evenly;
 }
 
 .cart {
     display: flex;
-    flex-wrap: wrap;
 }
 
 .cartb {
@@ -51,7 +58,7 @@
     justify-content: space-around;
     align-items: center;
     padding: 20px;
-    gap: 20px;
+    gap: 15px;
 }
 
 #buttonb, select, option {
@@ -68,7 +75,7 @@
     transition: 0.4s all ease;
 }
 .cep, .cupom, .cart-resume {
-    gap: 20px;
+    gap: 15px;
     display: flex;
     flex-direction: column;
     align-items: stretch;
@@ -103,7 +110,8 @@
     background-color: rgb(217, 233, 250) ;
 }
 
-@media only screen and (max-width: 500px) {
+
+@media only screen and (max-width: 800px) {
     * {
         font-size: 15px;
     }
@@ -123,4 +131,10 @@
     .carrinho-b {
         width: 100%;
     }
+
+    .contentc {
+        display: none;
+    
+    }
+    
 }

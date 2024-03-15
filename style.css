@@ -150,7 +150,7 @@ article {
     padding: 10px;
     box-shadow: 1px 1px 10px rgba(0, 0, 0, 0.164);
     transition: 0.4s all ease;
-    font-size: 15px;
+    font-size: 12px;
     width: 100%;
     display: flex;
     flex-direction: column;
@@ -165,14 +165,13 @@ article {
 }
 
 article button {
-    background-color: green;
+    background-color: #49a971;
     border-radius: 8px;
     color: white;
     border: 0;
     width: 100%;
-    height: 40px;
-    font-weight: bold;
-    font-size: 15px;
+    height: 35px;
+    font-size: 13px;
     margin: 10px;
 }
 

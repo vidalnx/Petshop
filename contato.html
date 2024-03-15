@@ -9,73 +9,75 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
 </head>
 <body>
-    <header>
-        <a href="index.html">
-          <img src="img/logohead.png" alt="logo">            
-        </a>
-        <div class="input">
-                <input class="bus" type="search" placeholder="Buscar"><a href="#"><button class="bt"><i class="fa-solid fa-magnifying-glass"></i></button></a>
+    <main>
+        <header>
+            <a href="index.html">
+            <img src="img/logohead.png" alt="logo">            
+            </a>
+            <div class="input">
+                    <input class="bus" type="search" placeholder="Buscar"><a href="#"><button class="bt"><i class="fa-solid fa-magnifying-glass"></i></button></a>
+                </div>
             </div>
+            <nav>
+                <a href="contato.html">
+                    <img src="img/telefone.png" alt="contato">
+                </a>
+                <a href="favoritos.html">
+                    <img src="img/coracao.png" alt="favoritos">  
+                </a>
+                <a href="carrinho.html">
+                    <img src="img/sacola.png" alt="sacola de compras">
+                </a>
+                <a href="perfil.hmtl">
+                    <img src="img/perfil.png" alt="perfil">  
+                </a>
+                <ul>
+                    <li><a href="#">Entre ou<br>Cadastre-se</a></li>
+                </ul>
+            </nav>
+        </header>
+        <div class="categorias">
+            <a href="racao-cachorro.html" style="text-decoration: none; color: white;">Cachorros</a>
+            <a href="racao-gato.html" style="text-decoration: none; color: white;">Gato</a>
+            <a href="racao-passaro.html" style="text-decoration: none; color: white;">Passaros</a>
+            <a href="servicos.html" style="text-decoration: none; color: white;">Serviços</a>
         </div>
-        <nav>
-            <a href="contato.html">
-                <img src="img/telefone.png" alt="contato">
-            </a>
-            <a href="favoritos.html">
-                <img src="img/coracao.png" alt="favoritos">  
-            </a>
-            <a href="carrinho.html">
-                <img src="img/sacola.png" alt="sacola de compras">
-            </a>
-            <a href="perfil.hmtl">
-                <img src="img/perfil.png" alt="perfil">  
-            </a>
-            <ul>
-                <li><a href="#">Entre ou<br>Cadastre-se</a></li>
-            </ul>
-        </nav>
-    </header>
-    <div class="categorias">
-        <a href="racao-cachorro.html" style="text-decoration: none; color: white;">Cachorros</a>
-        <a href="racao-gato.html" style="text-decoration: none; color: white;">Gato</a>
-        <a href="racao-passaro.html" style="text-decoration: none; color: white;">Passaros</a>
-        <a href="servicos.html" style="text-decoration: none; color: white;">Serviços</a>
-    </div>
-    <section class="contact">
-        <div class="box">
-            <form action="">
-                <fieldset>
-                    <legend><b>Abrir Ticket</b></legend>
-                    <br>
-                    <div class="inputBox">
-                        <input type="text" name="nome" id="nome" class="inputUser" required>
-                        <label for="nome" class="labelInput">Nome completo</label>
-                    </div>
-                    <br><br>
-                    <div class="inputBox">
-                        <input type="text" name="email" id="email" class="inputUser" required>
-                        <label for="email" class="labelInput">Email</label>
-                    </div>
-                    <br><br>
-                    <div class="inputBox">
-                        <input type="tel" name="telefone" id="telefone" class="inputUser" required>
-                        <label for="telefone" class="labelInput">Telefone</label>
-                    </div>
-                    <p style="margin-top: 15px;">Sexo:</p>
-                    <input type="radio" id="feminino" name="genero" value="feminino" required>
-                    <label for="feminino">Feminino</label>
-                    <br>
-                    <input type="radio" id="masculino" name="genero" value="masculino" required>
-                    <label for="masculino">Masculino</label>
-                    <br>
-                    <input type="radio" id="outro" name="genero" value="outro" required>
-                    <label for="outro">Outro</label>
-                    <br><br>
-                    <input type="submit" name="submit" id="submit">
-                </fieldset>
-            </form>
-        </div>
-    </section>
+        <section class="contact">
+            <div class="box">
+                <form action="">
+                    <fieldset>
+                        <legend><b>Abrir Ticket</b></legend>
+                        <br>
+                        <div class="inputBox">
+                            <input type="text" name="nome" id="nome" class="inputUser" required>
+                            <label for="nome" class="labelInput">Nome completo</label>
+                        </div>
+                        <br><br>
+                        <div class="inputBox">
+                            <input type="text" name="email" id="email" class="inputUser" required>
+                            <label for="email" class="labelInput">Email</label>
+                        </div>
+                        <br><br>
+                        <div class="inputBox">
+                            <input type="tel" name="telefone" id="telefone" class="inputUser" required>
+                            <label for="telefone" class="labelInput">Telefone</label>
+                        </div>
+                        <p style="margin-top: 15px;">Sexo:</p>
+                        <input type="radio" id="feminino" name="genero" value="feminino" required>
+                        <label for="feminino">Feminino</label>
+                        <br>
+                        <input type="radio" id="masculino" name="genero" value="masculino" required>
+                        <label for="masculino">Masculino</label>
+                        <br>
+                        <input type="radio" id="outro" name="genero" value="outro" required>
+                        <label for="outro">Outro</label>
+                        <br><br>
+                        <input type="submit" name="submit" id="submit">
+                    </fieldset>
+                </form>
+            </div>
+        </section>
+    </main>
     <div class="site-info">
         <div class="links">
             <ul>

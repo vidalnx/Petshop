@@ -11,6 +11,11 @@ body {
     background-color: rgb(233, 233, 233);
 }
 
+main {
+    min-height: calc(100% - 53px);
+    padding-bottom: 50px;
+}
+
 header {
     background-color: rgb(253, 246, 246);
     height: 6vh;
@@ -256,8 +261,7 @@ footer {
     align-items: center;
     background-color: rgb(32, 32, 32);
     height: 8vh;
-    position: absolute;
-    z-index: 1;
+
     width: 100%;
     color: white;
     font-size: 10px;

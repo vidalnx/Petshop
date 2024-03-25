@@ -373,11 +373,11 @@ legend{
         width: 120px;
     }
     
-    nav img:not([alt="perfil"]) {
+    nav img:not([alt="perfil"], [alt="sacola de compras"]) {
         display: none;
     }
 
-    nav img[alt="perfil"] {
+    nav img[alt="perfil"], [alt="sacola de compras"] {
         width: 25px;
         height: 25px;
     }

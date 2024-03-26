@@ -26,6 +26,7 @@
 
 .carrinho-a {
     width: 90%;
+    padding: 20px;
 }
 
 .carrinho-b {
@@ -112,6 +113,17 @@
 
 #buttona:hover {
     background-color: #31704b;
+}
+
+.contentc {
+    grid-gap: 40px;
+    display: grid;
+    grid-template-columns: repeat(2, 100px);
+    grid-template-columns: repeat(auto-fit, 300px);
+    grid-template-columns: repeat(auto-fit, minmax(121px, 0.4fr));
+    justify-content: center;
+    justify-items: center;
+    justify-content: center;
 }
 
 #buttonb:hover {

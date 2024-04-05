@@ -7,6 +7,7 @@
     <link rel="shortcut icon" href="img/logo.ico" type="image/x-icon">
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="carrinho.css">
+    <script src="script.js"></script>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
 </head>
 <body>
@@ -47,6 +48,8 @@
             <h1>Meu carrinho</h1>
             <div class="cart">
                 <div class="cart-content">
+                    <ul id="cart" style="display: flex; flex-direction: column;"></ul>
+
                     <div class="item">
                         <input type="checkbox" name="" id="">
                         <div class="cartprod">
@@ -82,7 +85,7 @@
             <div class="ca">
                 <h3 style="padding: 10px;">Produtos Recomendados</h3>
                 <div style="display: flex; justify-content: center;">
-                    <div class="contentc">   
+                    <div class="contentc">
                         <article class="prod">
                             <div class="articlediv">
                                 <img src="img/racao1.jpg" alt="">
@@ -175,5 +178,44 @@
     <footer>
         <p><i>&copy; 2024 Pet Amigo. Todos os direitos reservados.</i></p>
     </footer>
+    <script>
+        // Função para exibir os itens do carrinho na página do carrinho
+        function displayCart() {
+          const cart = JSON.parse(localStorage.getItem('cart'));
+          const cartList = document.getElementById('cart');
+        
+          // Limpa o conteúdo atual do carrinho
+          cartList.innerHTML = '';
+        
+          // Verifica se há itens no carrinho
+          if (cart && cart.length > 0) {
+            // Loop através de cada item do carrinho e adiciona à lista
+            cart.forEach(item => {
+              const cartItem = document.createElement('li');
+        
+              const itemImage = document.createElement('img');
+              itemImage.src = item.image;
+              itemImage.alt = item.name;
+              cartItem.appendChild(itemImage);
+        
+              const itemName = document.createElement('p');
+              itemName.textContent = item.name;
+              cartItem.appendChild(itemName);
+        
+              const itemPrice = document.createElement('p');
+              itemPrice.textContent = item.price;
+              cartItem.appendChild(itemPrice);
+              
+              cartList.appendChild(cartItem);
+            });
+          } else {
+            // Se o carrinho estiver vazio, exibe uma mensagem
+            cartList.innerHTML = '<p>Carrinho vazio</p>';
+          }
+        }
+        
+        // Chama a função para exibir os itens do carrinho ao carregar a página
+        window.onload = displayCart;
+        </script>
 </body>
 </html>

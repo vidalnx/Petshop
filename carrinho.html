@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="br">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=, initial-scale=1.0">
@@ -10,27 +11,29 @@
     <script src="script.js"></script>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
 </head>
+
 <body>
     <header>
         <a href="index.html">
-          <img src="img/logohead.png" alt="logo">            
+            <img src="img/logohead.png" alt="logo">
         </a>
         <div class="input">
-                <input class="bus" type="search" placeholder="Buscar"><a href="#"><button class="bt"><i class="fa-solid fa-magnifying-glass"></i></button></a>
-            </div>
+            <input class="bus" type="search" placeholder="Buscar"><a href="#"><button class="bt"><i
+                        class="fa-solid fa-magnifying-glass"></i></button></a>
+        </div>
         </div>
         <nav>
             <a href="contato.html">
                 <img src="img/telefone.png" alt="contato">
             </a>
             <a href="favoritos.html">
-                <img src="img/coracao.png" alt="favoritos">  
+                <img src="img/coracao.png" alt="favoritos">
             </a>
             <a href="sacola.html">
                 <img src="img/sacola.png" alt="sacola de compras">
             </a>
             <a href="perfil.hmtl">
-                <img src="img/perfil.png" alt="perfil">  
+                <img src="img/perfil.png" alt="perfil">
             </a>
             <ul>
                 <li><a href="#">Entre ou<br>Cadastre-se</a></li>
@@ -49,38 +52,7 @@
             <div class="cart">
                 <div class="cart-content">
                     <ul id="cart" style="display: flex; flex-direction: column;"></ul>
-
-                    <div class="item">
-                        <input type="checkbox" name="" id="">
-                        <div class="cartprod">
-                            <img src="img/gato1.jpg" alt="" style="max-width: 100px;">
-                            <p>Ração para gato</p>
-                        </div>
-                        <div class="cartb">
-                            <select name="quantidade" id="" style="max-width: 50px;">
-                                <option value="1">1</option>
-                                <option value="2">2</option>
-                                <option value="3">3</option>
-                            </select>
-                            <span>R$ 58,90</span>
-                        </div>
-                    </div>
-                    <div class="item">
-                        <input type="checkbox">
-                        <div class="cartprod">
-                            <img src="img/racao1.jpg" alt="" style="max-width: 100px;">
-                            <p>Ração para cachorro</p>
-                        </div>
-                        <div class="cartb">
-                            <select name="quantidade" id=""style="max-width: 50px;">
-                                <option value="1">1</option>
-                                <option value="2">2</option>
-                                <option value="3">3</option>
-                            </select>
-                            <span>R$ 58,90</span>
-                        </div> 
-                    </div>
-                </div>                
+                </div>
             </div>
             <div class="ca">
                 <h3 style="padding: 10px;">Produtos Recomendados</h3>
@@ -91,10 +63,10 @@
                                 <img src="img/racao1.jpg" alt="">
                                 <p>Ração Hills para Cães Filhotes de Mini e Pequeno Porte Sabor Frango</p>
                                 <spam>R$ 169,90</spam>
-                            </div>    
+                            </div>
                             <div class="botoesc">
                                 <button>Comprar</button>
-                                <a href="">Adicionar ao carrinho</a>                             
+                                <a href="">Adicionar ao carrinho</a>
                             </div>
                         </article>
                         <article class="prod">
@@ -102,21 +74,22 @@
                                 <img src="img/racao2.jpg" alt="">
                                 <p>Ração Hills Science Diet para Cães Adultos de Grande Porte Sabor Frango 12kg</p>
                                 <spam>R$ 479,99</spam>
-                            </div>    
+                            </div>
                             <div class="botoesc">
                                 <button>Comprar</button>
-                                <a href="">Adicionar ao carrinho</a>                             
+                                <a href="">Adicionar ao carrinho</a>
                             </div>
                         </article>
                         <article class="prod">
                             <div class="articlediv">
                                 <img src="img/racao3.jpg" alt="">
-                                <p>Ração GranPlus Gourmet para Cães Adultos de Médio e Grande Porte Sabor Ovelha e Arroz</p>
+                                <p>Ração GranPlus Gourmet para Cães Adultos de Médio e Grande Porte Sabor Ovelha e Arroz
+                                </p>
                                 <spam>R$ 58,50</spam>
-                            </div>    
+                            </div>
                             <div class="botoesc">
                                 <button>Comprar</button>
-                                <a href="">Adicionar ao carrinho</a>                             
+                                <a href="">Adicionar ao carrinho</a>
                             </div>
                         </article>
                         <article class="prod">
@@ -124,17 +97,17 @@
                                 <img src="img/racao4.jpg" alt="">
                                 <p>Ração GranPlus Menu para Cães Adultos de Porte Mini Sabor Carne e Arroz</p>
                                 <spam>R$ 166,90</spam>
-                            </div>    
+                            </div>
                             <div class="botoesc">
                                 <button>Comprar</button>
-                                <a href="">Adicionar ao carrinho</a>                             
+                                <a href="">Adicionar ao carrinho</a>
                             </div>
                         </article>
+                    </div>
                 </div>
-            </div>
 
+            </div>
         </div>
-    </div>
         <div class="carrinho-b">
             <div class="cep">
                 <h5>Calcule seu CEP:</h5>
@@ -144,9 +117,7 @@
             <div class="cart-resume">
                 <p>Resumo do pedido</p>
                 <div class="cart-price">
-                    <p>Produtos: R$ 59,90</p>
-                    <p>Frete: R$ 39,20</p>
-                    <h4>Valor total: R$ 89,10</h4>
+                    <p id="total">Total: R$ 0.00</p>
                 </div>
                 <button id="buttona">Comprar</button>
                 <a href="index.html">
@@ -179,43 +150,71 @@
         <p><i>&copy; 2024 Pet Amigo. Todos os direitos reservados.</i></p>
     </footer>
     <script>
-        // Função para exibir os itens do carrinho na página do carrinho
-        function displayCart() {
-          const cart = JSON.parse(localStorage.getItem('cart'));
-          const cartList = document.getElementById('cart');
-        
-          // Limpa o conteúdo atual do carrinho
-          cartList.innerHTML = '';
-        
-          // Verifica se há itens no carrinho
-          if (cart && cart.length > 0) {
-            // Loop através de cada item do carrinho e adiciona à lista
-            cart.forEach(item => {
-              const cartItem = document.createElement('li');
-        
-              const itemImage = document.createElement('img');
-              itemImage.src = item.image;
-              itemImage.alt = item.name;
-              cartItem.appendChild(itemImage);
-        
-              const itemName = document.createElement('p');
-              itemName.textContent = item.name;
-              cartItem.appendChild(itemName);
-        
-              const itemPrice = document.createElement('p');
-              itemPrice.textContent = item.price;
-              cartItem.appendChild(itemPrice);
-              
-              cartList.appendChild(cartItem);
-            });
-          } else {
-            // Se o carrinho estiver vazio, exibe uma mensagem
-            cartList.innerHTML = '<p>Carrinho vazio</p>';
-          }
+        function calculateTotal(cartList) {
+        let total = 0;
+        cartList.querySelectorAll('li').forEach(cartItem => {
+            let price = cartItem.querySelector('.preco').textContent;
+            price = parseFloat(price.replace('R$', '').replace(',', '.'));
+            total = total + price;
+        });
+        return total;
         }
-        
-        // Chama a função para exibir os itens do carrinho ao carregar a página
+        function displayCart() {
+            const cart = JSON.parse(localStorage.getItem('cart'));
+            const cartList = document.getElementById('cart');
+
+            cartList.innerHTML = '';
+
+            if (cart && cart.length > 0) {
+                cart.forEach(item => {
+                    const cartItem = document.createElement('div');
+                    cartItem.classList.add('item');
+
+                    const checkbox = document.createElement('input');
+                    checkbox.setAttribute('type', 'checkbox');
+                    cartItem.appendChild(checkbox);
+
+                    const cartprod = document.createElement('div');
+                    cartprod.classList.add('cartprod');
+                    const img = document.createElement('img');
+                    img.src = item.image;
+                    img.alt = item.name;
+                    img.style.maxWidth = '100px';
+                    cartprod.appendChild(img);
+                    const itemName = document.createElement('p');
+                    itemName.textContent = item.name;
+                    cartprod.appendChild(itemName);
+                    cartItem.appendChild(cartprod);
+
+                    const cartb = document.createElement('div');
+                    cartb.classList.add('cartb');
+                    const select = document.createElement('select');
+                    select.setAttribute('name', 'quantidade');
+                    select.style.maxWidth = '50px';
+                    for (let i = 1; i <= 3; i++) {
+                        const option = document.createElement('option');
+                        option.value = i;
+                        option.textContent = i;
+                        select.appendChild(option);
+                    }
+                    cartb.appendChild(select);
+                    const span = document.createElement('span');
+                    span.textContent = item.price;
+                    cartb.appendChild(span);
+                    cartItem.appendChild(cartb);
+
+                    cartList.appendChild(cartItem);
+                });
+            } else {
+                cartList.innerHTML = '<p>Carrinho vazio</p>';
+            }
+            calcularTotal();
+        }
+
+
         window.onload = displayCart;
-        </script>
+
+    </script>
 </body>
+
 </html>
